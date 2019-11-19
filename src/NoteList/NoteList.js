@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NoteItem from "./Note/NoteItem";
-import "./NoteList.css";
+import NoteItem from "../Note/NoteItem";
 
 export default function NoteList(props) {
   return (

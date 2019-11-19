@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { format } from 'date-fns';
 
 export default function NoteItem(props) {
   return (
@@ -15,7 +14,7 @@ export default function NoteItem(props) {
           Modified
           {' '}
           <span className="date">
-            {format(props.modified, 'Do MMM YYYY')}
+            {props.modified}
           </span>
         </p>
       </div>

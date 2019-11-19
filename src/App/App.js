@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import './App.css';
-import Header from '../Header';
-import NoteList from '../NoteList';
+import NoteList from '../NoteList/NoteList';
 import NoteListNav from '../NoteListNav/NoteListNav';
 import NotePage from '../NotePage/NotePage';
 import NotePageNav from '../NotePageNav/NotePageNav';

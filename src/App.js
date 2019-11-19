@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
+import NoteList from './NoteList';
+import Sidebar from './Sidebar';
+import dummyStore from './dummy-store';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+class App extends Component {
+  state = { 
+    notes: [],
+    folders: []
+   }
+
+  render() {
+    return (
+      <section className="body">
+        <div className="App">
+          <Header />
+        </div>
+        <div className='main'> 
+          <Sidebar />
+          <NoteList />
+        </div>
+      </section>
+    );
+  }
 }
 
 export default App;
